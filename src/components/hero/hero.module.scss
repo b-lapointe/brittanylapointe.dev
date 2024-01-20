@@ -1,0 +1,89 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 50px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: arpona, serif;
+    width: 75%;
+    height: 850px;
+    padding: 30px 0 50px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 130px;
+}
+
+.introText {
+    font-family: arpona, serif;
+    font-size: 38pt;
+    color: #FFFAFF;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 850px;
+    padding: 0;
+}
+
+.laptop {
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: unset;
+        width: 100%;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width:70%;
+        margin-bottom: 140px;
+        margin-left: 40px;
+    }
+
+    .imageBox {
+        height: auto;
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .hero {
+        width: 100%;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 70%;
+        margin-bottom: 70px;
+        margin-left: 25px;
+    }
+
+    .introText {
+        font-size: 24px;
+    }
+
+    .imageBox {
+        margin: 0 15px;
+    }
+}

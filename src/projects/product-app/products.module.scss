@@ -1,0 +1,66 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #303036;
+}
+
+.app h1 {
+    color: #FFFAFF;
+}
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    padding: 20px 40px;
+    background-color: rgb(60, 60, 202);
+}
+
+.titles h2 {
+    color: #FFFAFF;
+    margin-bottom: 0;
+}
+
+.itemList {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    padding: 0 30px 30px 30px;
+    background-color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+
+.item:hover {
+    background-color: rgb(232, 250, 255);
+}
+
+.name {
+    min-width: 210px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    color: rgb(60, 60, 202);
+}
+
+.price {
+    min-width: 80px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+.des {
+    margin-bottom: 0;
+    min-width: min-content;
+}

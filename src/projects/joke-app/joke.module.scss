@@ -1,0 +1,61 @@
+.program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #303036;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title {
+    font-family: arpona, serif;
+    font-size: 62px;
+    color: #FFFAFF;
+    margin-bottom: 0;
+}
+
+.laugh {
+    font-size: 42px;
+    margin: 0 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 311.500px;
+    width: 75%;
+    border-radius: 10px;
+    background-color: #26F0F1;
+}
+
+.joke {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.joke h3 {
+    margin: 20px 0;
+}
+
+.joke:hover .answer {
+    color: #FFFAFF;
+} 
+
+.question {
+    color: #FFFAFF;
+    font-size: 32px;
+}
+
+.answer {
+    align-self: flex-end;
+    color: transparent;
+}

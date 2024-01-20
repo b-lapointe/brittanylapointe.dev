@@ -1,0 +1,74 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    padding: 50px 0;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        width: inher;
+        font-family: arpona, serif;
+        color: #FFFAFF;
+    }
+    
+    &__profile {
+        display: flex;
+        margin: 0 60px;
+        max-width: 40%;
+        background-color: #e7c6ff;
+        border-radius: 10px;
+    }
+    
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 75%;
+        margin: 0px;
+
+        &-icon {
+            max-width: 200px;
+            margin: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .profile {
+        margin-bottom: 30px;
+    } 
+    
+    .skills {
+        display: none;
+    }
+
+    .about button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .about {
+        width: 100%;
+    }
+
+    .profile {
+        max-width: 60%;
+    }
+
+    .about button {
+        display: none;
+    }
+}

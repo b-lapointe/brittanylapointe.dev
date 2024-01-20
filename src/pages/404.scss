@@ -1,0 +1,132 @@
+@import "../styles/variables";
+
+.wrongPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.55);
+
+    &__error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: arpona, serif;
+        height: 800px;
+        width: 100%;
+        padding: 50px 0;
+    }
+    
+    &__gifGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__four {
+        position: absolute;
+        font-family: hwt-aetna,serif;
+        font-size: 250px;
+        color: rgba(255, 250, 255, 0.25);
+        margin-bottom: 35px;
+    }
+    
+    &__gif {
+        margin-top: 30px;
+        height: 400px;
+    }
+    
+    &__text {
+        font-family: arpona, serif;
+        font-size: 32px;
+        color: $off-white;
+        line-height: 1.2;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    a:hover {
+        background-color: $primary-red-alt;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .option1 {
+            position: relative;
+        }
+        .option2 {
+            visibility: visible;
+        }
+    }
+}
+
+.option1, .option2 {
+    background-color: $primary-red;
+    border: none;
+    border-radius: 30px;
+    margin: 0 20px;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #FFFAFF;
+    width: fit-content;
+}
+
+.option1 {
+    position: absolute;
+}
+
+.option2 {
+    visibility: hidden;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        padding: 0 15px;
+    }
+
+    .option1 {
+        position: unset;
+    }
+    
+    .option2 {
+        display: none;
+    }
+
+    .buttons{
+        margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    .error{
+        height: 500px;
+        padding: 40px 0;
+    }
+
+    .gif{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .four {
+        font-size: 130px;
+    }
+
+    .text{
+        font-size: 22px;
+    }
+
+}

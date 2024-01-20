@@ -1,0 +1,5 @@
+module.exports = `
+👋 Hey there! I'm a seasoned Software Developer with 4 years of hands-on experience crafting digital experiences. I graduated from St. Francis Xavier University with a Bachelor of Science, majoring in Computer Science and minoring in Studio Art. My journey into the world of front-end development gained momentum during my first COOP placement, where I discovered the perfect blend of my major and minor ignited my passion for frontend development.
+📍 Originally from New Brunswick, I've recently set my roots in Nova Scotia, immersing myself in the dynamic tech community. Beyond coding, you'll find me immersed in video games, hitting the gym, paddle boarding in the summer time, rolling dice in DnD, or having a blast with friends on the volleyball and soccer fields. All while being the proud cat mom.
+💼 Eager to bring my creative flair, technical prowess and keen attention to detail to your team, I'm thrilled at the prospect of contributing to innovative projects. If you're seeking a professional with a zest for fun and a love for coding, let's connect for a chat about how I can bring my skills to your table!
+`.trim();

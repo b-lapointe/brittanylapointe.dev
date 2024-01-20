@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    font-family: arpona, serif;
+    padding: 24px 130px;
+
+    &__logo {
+        font-size: 48px;
+        font-family: hwt-aetna,serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px;
+    
+        a {
+            color: $off-white;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 415px) {
+            font-size: 28px;
+        }
+    }
+    
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        margin: 0px;
+    
+        li {
+            margin-bottom: 0px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+    &__nav-item {
+        color: $off-white;
+        font-size: 28px;
+        font-family: arpona, serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0 0 0 50px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            color: $gray;
+            cursor: pointer;
+        }
+    }
+}
