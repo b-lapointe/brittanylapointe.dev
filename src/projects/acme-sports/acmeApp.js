@@ -10,11 +10,12 @@ function ACMEApp() {
 
   useEffect(() => {
     const fetchData = async () => {
+      const apiKey = process.env.REACT_APP_API_KEY;
       const options = {
         method: 'GET',
         url: 'https://nfl-api-data.p.rapidapi.com/nfl-team-listing/v1/data',
         headers: {
-          'X-RapidAPI-Key': 'ed0660cec6msha2fe54e460c0bc2p1c1030jsn00632e8d9471',
+          'X-RapidAPI-Key': apiKey,
           'X-RapidAPI-Host': 'nfl-api-data.p.rapidapi.com'
         }
       };
