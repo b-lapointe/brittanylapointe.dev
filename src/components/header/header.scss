@@ -9,6 +9,10 @@
     font-family: arpona, serif;
     padding: 24px 130px;
 
+    @media only screen and (max-width: 1024px) {
+        padding: 30px;
+    }
+
     &__logo {
         font-size: 48px;
         font-family: hwt-aetna,serif;

@@ -12,6 +12,11 @@
     right: 20px;
     cursor: pointer;
 
+    @media only screen and (max-width: 415px) {
+        bottom: 65px;
+        right: 5px;
+    }
+
     &.show {
         display: flex;
     }

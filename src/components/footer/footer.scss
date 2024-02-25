@@ -20,11 +20,13 @@
     
     .button:hover {
         color: #e7c6ff;
+        background-color: transparent;
         cursor: pointer;
     }
 
     p {
         margin: 0;
+        text-align: center;
     }
     
     .text {

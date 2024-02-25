@@ -1,32 +1,132 @@
 .projects {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     color: #FFFAFF;
     list-style-type: none;
     width: 75%;
     margin: 0px;
-    padding-top: 50px;
+    padding: 30px;
     white-space: nowrap;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        gap: 30px;
+    }
+
+    @media only screen and (max-width: 415px) {
+        padding: 15px;
+        margin-bottom: 20px;
+        gap: 15px;
+    }
+
+    &__other {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+
+        @media only screen and (max-width: 415px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .projects__box {
+            width: calc(33.33% - 20px);
+
+            @media only screen and (max-width: 415px) {
+                width: 100%;
+            }
+
+            img {
+                height: 235px;
+            }
+        }
+    }
+
+    &__first {
+        display: grid;
+        grid-template-areas: 
+            "gif gif card";
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+        margin: auto;
+        width: 100%;
+        svg {
+            font-size: 34px;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 415px) {
+            grid-template-areas: 
+                "card card card";
+        }
+
+        .projects__box {
+            max-width: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .projects__overlay {
+            opacity: 1;
+        }
+    }
+
+    &__demoGif {
+        grid-area: gif;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        img {
+            margin: 0;
+            object-fit: cover;
+            background-color: #e7c6ff;
+            padding: 60px 0;
+            border-radius: 40px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 415px) {
+            display: none;
+        }
+    }
     
     &__box {
+        grid-area: card;
         background-color: #e7c6ff;
+        display: flex;
         justify-content: center;
-        width: 400px;
+        align-items: center;
         height: auto;
         border-radius: 40px;
         position: relative;
         padding: 60px 0;
-    }
-    
-    &__img {
-        margin-bottom: 0;
-        width: inherit;
-        height: 400px;
-        object-fit: cover;
-        background-color: grey;
+        overflow: hidden;
+
+        img {
+            margin: 0;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media only screen and (max-width: 415px) {
+            max-width: 100%;
+            padding: 20px 0;
+            height: 200px;
+
+            img {
+                height: auto;
+            }
+        }
     }
     
     &__overlay {
@@ -34,6 +134,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 15px;
+        gap: 30px;
         position: absolute;
         width: auto;
         height: 100%;
@@ -43,11 +145,20 @@
         margin: auto;
         opacity: 0;
         transition-duration: 0.10s;
+        text-wrap: wrap;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.55);
+        
+        h2 {
+            margin: 0;
+        }
 
         &:hover {
             opacity: 1;
-            background-color: rgba(0, 0, 0, 0.55);
-            border-radius: 40px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            opacity: 1;
         }
     }
     
@@ -55,6 +166,7 @@
         font-family: arpona, serif;
         color: #FFFAFF;
         margin-bottom: 30px;
+        padding: 0 5px;
     }
     
     &__btns {
@@ -71,72 +183,3 @@
         }
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .projects {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .row {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .projectBox {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        max-width: 225px;
-        height: 225px;
-        margin: 20px 15px;
-        padding: 30px 0px 20px 0px;
-    }
-
-    .img {
-        display: none;
-    }
-
-    .overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        opacity: 1;
-        position: unset;
-        max-width: 225px;
-        height: 200px;
-        padding: 0px 15px 30px 15px;
-    }
-
-    .overlay:hover {
-        background-color: transparent;
-    }
-
-    .appName {
-        max-width: 225px;
-        white-space: pre-line;
-        margin: 0;
-    }
-
-    .btns {
-        a {
-            margin: 0 10px;
-        }
-    }
-}
-
-@media only screen and (max-width: 415px) {
-    .projects {
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .row {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-

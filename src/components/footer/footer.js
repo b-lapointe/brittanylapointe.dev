@@ -19,7 +19,7 @@ const Footer = () => {
             <p className={'footer__text'}>
                 © Totally copyrighted<span role="img" aria-label="eye roll emoji"> 🙄 </span> 
                 | Created by {data.site.siteMetadata.author} | 2024 
-                | <a className={'button'} href='https://github.com/b-lapointe/portfolio' target="_blank" rel="noreferrer"> My Code </a>
+                | <a className={'button'} href='https://github.com/b-lapointe/brittanylapointe.dev' target="_blank" rel="noreferrer"> My Code </a>
             </p>
         </footer>
     )

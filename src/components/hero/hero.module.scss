@@ -16,6 +16,10 @@
     width: 75%;
     height: 850px;
     padding: 30px 0 50px 0;
+
+    @media only screen and (max-width: 1024px) {
+        width: 96%;
+    }
 }
 
 .intro {
@@ -66,6 +70,10 @@
 }
 
 @media only screen and (max-width: 415px) {
+    .section {
+        margin-bottom: 30px;
+    }
+
     .hero {
         width: 100%;
     }

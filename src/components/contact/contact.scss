@@ -11,6 +11,12 @@
     width: 100%;
     padding: 50px 0;
     white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 415px) {
+        padding: 15px;
+    }
 
     &__info {
         display: flex;
@@ -22,6 +28,10 @@
         font-size: 32px;
         margin: 20px 0;
         text-decoration: none;
+
+        @media only screen and (max-width: 415px) {
+            font-size: 20px;
+        }
     }
     
     a:hover {
@@ -31,10 +41,4 @@
 
 .contact svg {
     margin-right: 7px;
-}
-
-@media only screen and (max-width: 415px) {
-    .contact p {
-        font-size: 20px;
-    }
 }
