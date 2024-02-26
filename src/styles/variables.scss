@@ -20,6 +20,7 @@ $lilac: #e7c6ff;
 
 .button:hover {
     background-color: $primary-red-alt;
+    transition: 0.3s;
     cursor: pointer;
 }
 

@@ -57,6 +57,7 @@
 
         &:hover {
             color: $gray;
+            transition: 0.3s;
             cursor: pointer;
         }
     }
